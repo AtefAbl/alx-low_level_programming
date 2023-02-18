@@ -1,15 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - prints single digits in base 10
- * Return: always 0
+ *main - print 0123456789 using putchar
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
-{
-putchar(i + '0');
-}
-putchar('\n');
-return (0);
+	int n = '0';
+
+	while (n <= '9')
+	{
+		putchar(n);
+		n++;
+	}
+	putchar('\n');
+
+	return (0);
 }
