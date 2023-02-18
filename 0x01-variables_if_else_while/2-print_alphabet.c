@@ -1,16 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - prints alpha in lower case
- * Return: always 0
+ *main - print lowercase a-z
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-char letter = 'a';
-while (letter <= 'z')
-{
-putchar(letter);
-letter++;
-}
-putchar('\n');
-return (0);
+	char alpha = 'a';
+
+	while (alpha <= 'z')
+	{
+		putchar(alpha);
+		alpha++;
+	}
+	putchar('\n');
+
+	return (0);
 }
