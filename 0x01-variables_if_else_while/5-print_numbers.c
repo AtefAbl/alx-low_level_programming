@@ -1,16 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - prints all strings from 0 to 9
- * Return: always 0
+ *main - print 0123456789
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int i = 0;
-while (i < 10)
-{
-putchar(i + '0');
-i++;
-}
-putchar('\n');
-return (0);
+	int n = 0;
+
+	while (n < 10)
+	{
+		printf("%i", n);
+		n++;
+	}
+	putchar('\n');
+
+	return (0);
 }
