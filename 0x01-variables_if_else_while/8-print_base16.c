@@ -1,22 +1,28 @@
 #include <stdio.h>
+
 /**
- * main - prints the numbers in base 16
- * Return: always 0
+ *main - prints hexadecimal base 0123456789abcdef, using putchar
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int i;
-for (i = 0; i < 16; i++)
-{
-if (i < 10)
-{
-putchar(i + '0');
-}
-else
-{
-putchar(i - 10 + 'a');
-}
-}
-putchar('\n');
-return (0);
+	int n = '0';
+	int a_to_f = 'a';
+
+	while (n <= '9') /*print 0-9*/
+	{
+		putchar(n);
+		n++;
+	}
+
+	while (a_to_f <= 'f') /*print a-f to finish hexbase*/
+	{
+		putchar(a_to_f);
+		a_to_f++;
+	}
+
+	putchar('\n');
+
+	return (0);
 }
